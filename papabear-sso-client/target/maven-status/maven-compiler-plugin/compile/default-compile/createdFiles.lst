@@ -1,0 +1,11 @@
+com\papabear\sso\client\shiro\realm\UpmsRealm.class
+com\papabear\sso\client\util\RequestParameterUtil.class
+com\papabear\sso\client\shiro\session\UpmsSession$OnlineStatus.class
+com\papabear\sso\client\shiro\session\UpmsSessionFactory.class
+com\papabear\sso\client\shiro\filter\UpmsSessionForceLogoutFilter.class
+com\papabear\sso\client\shiro\session\UpmsSessionDao.class
+com\papabear\sso\client\shiro\filter\UpmsAuthenticationFilter.class
+com\papabear\sso\client\shiro\listener\UpmsSessionListener.class
+com\papabear\sso\client\shiro\session\UpmsSession.class
+com\papabear\sso\client\util\SerializableUtil.class
+com\papabear\sso\client\interceptor\LogAspect.class

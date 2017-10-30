@@ -1,0 +1,311 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time,
+mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+li{
+    list-style: none;
+}
+a,input{outline:none;}
+a{
+    text-decoration: none;
+    color:#333333;
+}
+a:hover{
+    text-decoration: none;
+}
+body,html{
+    width: 100%;
+    height:100%;
+    max-width:1920px;
+    margin:0 auto;
+    background: #f8f8f8;
+}
+input[type=submit]:hover{
+    opacity: 0.9;
+}
+input::-moz-placeholder,textarea::-moz-placeholder{color:#cccccc;font-weight:normal}::-webkit-input-placeholder{color:#cccccc;font-weight:normal}input:-ms-input-placeholder{color:#cccccc;font-weight:normal}
+.tl{
+    text-align: left;
+}
+.row{
+    padding:10px 0;
+    margin:0;
+}
+.link:hover{
+    color:#ff6200;
+}
+.content{
+    width: 100%;
+    overflow: hidden;
+    height:100%;
+    min-height:800px;
+    position: relative;
+    margin:0 auto;
+}
+.indexlogo{
+    position: absolute;
+    left: 50%;
+    top:60px;
+    margin-left:-87px;
+    width:179px;
+    height:27px;
+}
+.content-login,.content-register,.login-content{
+    width: 340px;
+    height:410px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px #cdcbcb;
+    position: absolute; 
+    left:50%; 
+    top:240px;
+    margin-left:-170px;
+    text-align: center;
+    padding:40px;
+    background:#fff;
+    padding-top:49px;
+    background:url('../images/loginbg.png') top center no-repeat;
+    background-color: #fff;
+}
+.content-register{
+    height:450px;
+}
+.baixiong{
+    width: 130px;
+    height:auto;
+    position: absolute;
+    left: 50%;
+    top:-89px;
+    margin-left:-65px;
+}
+.loginlink,.registerlink{
+    display: inline-block;
+    width: 43px;
+    font-size:14px;
+    color:#666;
+    line-height:26px;
+    margin-bottom:22px;
+}
+.find-title{
+    display: inline-block;
+    font-size:14px;
+    color:#666;
+    line-height:26px;
+    margin-bottom:22px;
+}
+.on{
+    border-bottom:2px solid #0e0e0e;
+}
+.loginlink{
+    margin-right:55px;
+}
+.yzm-btn{
+    height:38px;
+    width:98px;
+    float: right;
+    border:1px solid #e0e0e0;
+    color:#999;
+    background:none;
+    outline:medium;
+    margin:0;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.username,.userpassword,.code,.yzm-input,.password{
+    width: 260px;
+    height:38px;
+    background:#f8f8f8;
+    border:none;
+    text-indent: 10px;
+    color:#333;
+    float:left;
+}
+.yzm-input{
+    width: 146px;
+    float: left;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.code{
+    width:146px;
+    float: left;
+}
+.code-image,.code-span{
+    width: 94px;
+    height:38px;
+    border:1px solid #dddddd;
+    margin-left:16px;
+}
+.code-span{
+    float: right;
+    cursor: pointer;
+    color:#999999;
+    display: inline-block;
+    line-height:38px;
+}
+.forgetpassword,.changecode{
+    display: inline-block;
+    float: left;
+    font-size:12px;
+    color:#666;
+}
+.changecode{
+    float: right;
+    color:#999;
+}
+.loginbtn{
+    width: 260px;
+    height:34px;
+    background:#00a0e9;
+    color:#fff;
+    border:none;
+    margin-top:24px;
+}
+.coderow,.changecode{
+    display: none;
+}
+.remind,.remark{
+    font-size:12px;
+    color:#ff6200;
+    text-align: left;
+    display: none;
+}
+.effective{
+    background: #00a0e9;
+    border:none;
+    color:#fff;
+}
+.qq-link,.wx-link{
+    width:36px;
+    height:36px;
+    display: inline-block;
+    margin-top:10px;
+}
+.qq-link{
+    margin-right:40px;
+}
+.wx-link{
+}
+.qq-link img,.wx-link img{
+    width:36px;
+    height:36px;
+    opacity: 1;
+}
+.qq-link img{
+	width:36px;
+	height:36px;
+}
+.wx-link:hover img{
+    opacity: 0;
+}
+.qq-link:hover img{
+	opacity: 0;
+}
+.qq-link:hover{
+    background:url("../images/qq-on.png") top center no-repeat;
+}
+.wx-link:hover{
+    background:url("../images/wx-on.png") top left no-repeat;
+}
+.copyright{
+    color:#999;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom:10px;
+}
+/*鎵惧洖瀵嗙爜*/ 
+.find-infor{
+    width: 260px;
+    overflow: hidden;
+}
+.find-title{
+    color:#333;
+    margin-bottom:20px;
+}
+.login-header,.login-header a{
+    color:#999;
+}
+.row{
+    margin:0;
+}
+.remember{
+    vertical-align:text-top;
+    margin-top:0;
+    height:14px;
+}
+input[type=checkbox].remember{
+    margin-top:0;
+    margin-right:5px;
+}
+.qq-img:hover,.wx-img:hover{
+    opacity: 0.9;
+}
+.linebg{
+    background: url("../image/linebg.png") left center repeat-x;
+    width: 260px;
+    margin:0 auto;
+}
+.linebg span{
+    background: #fff;
+    padding:0 15px;
+}
+.reset-btn{
+    width:260px;
+    height:50px;
+    background:#ff5600;
+    color:#fff;
+    border:none;
+    font-size:16px;
+    margin-bottom:5px;
+    cursor: pointer;
+}
+.linkhov a:hover{
+	color:#00a0e9;
+}
+
+.fail-row{
+    height:250px;
+}
+.login-fail{
+    width: 70px;
+    height:auto;
+    margin:0 auto;
+    margin-top:80px;
+}
+.fail-reason-line{
+    text-align:center;
+    padding:15px 0;
+    font-size: 14px;
+    color: #999;
+    line-height:180%;
+}
+.fail-reason{
+    text-align:center;
+    padding:15px 0;
+    font-size: 16px;
+    color: #ff6200;
+}
+
+input[type=checkbox].checkbix:checked+label>span:before{box-sizing: content-box;}
+/*input[type=checkbox].checkbix*/
+.checkbox{
+    zoom: 80%;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+.checkbox label{
+    padding-left: 0;
+}
+.row{
+    padding-top: 0!important;
+}

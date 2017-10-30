@@ -1,0 +1,27 @@
+2017-10-19 14:26:20 [ INFO ] [ DruidDataSource.java :669(init)]  {dataSource-1} inited
+2017-10-19 14:26:20 [ WARN ] [ DiskStorePathManager.java :162(resolveAndLockIfNeeded)]  diskStorePath 'C:\Users\ADMINI~1\AppData\Local\Temp\zheng-upms-rpc-service\ehcache' is already used by an existing CacheManager either in the same VM or in a different process.
+The diskStore path for this CacheManager will be set to C:\Users\ADMINI~1\AppData\Local\Temp\zheng-upms-rpc-service\ehcache\ehcache_auto_created7939054871070606203diskstore.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2017-10-19 14:26:21 [ INFO ] [ DynamicDataSource.java :20(determineCurrentLookupKey)]  当前操作使用的数据源：masterDataSource
+2017-10-19 14:26:21 [ DEBUG ] [ BaseJdbcLogger.java :181(debug)]  ==>  Preparing: select id, user_name, bx_num, user_pwd, nick_name, avatar_img, email, phone, points, create_date_time, update_time, status, salt, available, block_time, block_memo, grade_id, exp_num, type from tbl_user where user_name = ? 
+2017-10-19 14:26:21 [ DEBUG ] [ BaseJdbcLogger.java :181(debug)]  ==> Parameters: 18656330413(String)
+2017-10-19 14:26:22 [ DEBUG ] [ BaseJdbcLogger.java :181(debug)]  <==      Total: 1
+2017-10-19 14:26:22 [ INFO ] [ DruidDataSource.java :1385(close)]  {dataSource-1} closed
+2017-10-19 14:32:11 [ INFO ] [ DruidDataSource.java :669(init)]  {dataSource-1} inited
+2017-10-19 14:32:11 [ WARN ] [ DiskStorePathManager.java :162(resolveAndLockIfNeeded)]  diskStorePath 'C:\Users\ADMINI~1\AppData\Local\Temp\zheng-upms-rpc-service\ehcache' is already used by an existing CacheManager either in the same VM or in a different process.
+The diskStore path for this CacheManager will be set to C:\Users\ADMINI~1\AppData\Local\Temp\zheng-upms-rpc-service\ehcache\ehcache_auto_created3096245849787873448diskstore.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2017-10-19 14:32:13 [ INFO ] [ DynamicDataSource.java :20(determineCurrentLookupKey)]  当前操作使用的数据源：masterDataSource
+2017-10-19 14:32:13 [ DEBUG ] [ BaseJdbcLogger.java :181(debug)]  ==>  Preparing: select id, user_name, bx_num, user_pwd, nick_name, avatar_img, email, phone, points, create_date_time, update_time, status, salt, available, block_time, block_memo, grade_id, exp_num, type from tbl_user where user_name = ? 
+2017-10-19 14:32:13 [ DEBUG ] [ BaseJdbcLogger.java :181(debug)]  ==> Parameters: 18656330413(String)
+2017-10-19 14:32:13 [ DEBUG ] [ BaseJdbcLogger.java :181(debug)]  <==      Total: 1
+2017-10-19 14:32:13 [ INFO ] [ DruidDataSource.java :1385(close)]  {dataSource-1} closed
+2017-10-19 14:35:38 [ INFO ] [ DruidDataSource.java :669(init)]  {dataSource-1} inited
+2017-10-19 14:35:39 [ WARN ] [ DiskStorePathManager.java :162(resolveAndLockIfNeeded)]  diskStorePath 'C:\Users\ADMINI~1\AppData\Local\Temp\zheng-upms-rpc-service\ehcache' is already used by an existing CacheManager either in the same VM or in a different process.
+The diskStore path for this CacheManager will be set to C:\Users\ADMINI~1\AppData\Local\Temp\zheng-upms-rpc-service\ehcache\ehcache_auto_created5522909117674633906diskstore.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2017-10-19 14:35:40 [ INFO ] [ DynamicDataSource.java :20(determineCurrentLookupKey)]  当前操作使用的数据源：masterDataSource
+2017-10-19 14:35:40 [ DEBUG ] [ BaseJdbcLogger.java :181(debug)]  ==>  Preparing: select id, user_name, bx_num, user_pwd, nick_name, avatar_img, email, phone, points, create_date_time, update_time, status, salt, available, block_time, block_memo, grade_id, exp_num, type from tbl_user where user_name = ? 
+2017-10-19 14:35:40 [ DEBUG ] [ BaseJdbcLogger.java :181(debug)]  ==> Parameters: 18656330413(String)
+2017-10-19 14:35:40 [ DEBUG ] [ BaseJdbcLogger.java :181(debug)]  <==      Total: 1
+2017-10-19 14:35:40 [ INFO ] [ DruidDataSource.java :1385(close)]  {dataSource-1} closed

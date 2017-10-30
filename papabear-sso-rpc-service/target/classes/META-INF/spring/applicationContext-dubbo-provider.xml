@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="papabear-sso-rpc-service"/>
+
+    <dubbo:registry address="zookeeper://127.0.0.1:2181" timeout="300000"/>
+
+    <dubbo:protocol name="dubbo" port="20891"/>
+
+    <dubbo:monitor protocol="registry"/>
+
+    <!-- 系统 -->
+    <bean id="systemService" class="com.papabear.sso.rpc.service.impl.TblSystemServiceImpl"/>
+    <dubbo:service interface="com.papabear.sso.rpc.api.TblSystemService" ref="systemService" timeout="100000"/>
+
+    <!-- 组织 -->
+    <bean id="organizationService" class="com.papabear.sso.rpc.service.impl.TblOrganizationServiceImpl"/>
+    <dubbo:service interface="com.papabear.sso.rpc.api.TblOrganizationService" ref="organizationService" timeout="100000"/>
+
+    <!-- 用户组织 -->
+    <bean id="userOrganizationService" class="com.papabear.sso.rpc.service.impl.TblUserOrganizationServiceImpl"/>
+    <dubbo:service interface="com.papabear.sso.rpc.api.TblUserOrganizationService" ref="userOrganizationService" timeout="100000"/>
+
+    <!-- 用户 -->
+    <bean id="userService" class="com.papabear.sso.rpc.service.impl.TblUserServiceImpl"/>
+    <dubbo:service interface="com.papabear.sso.rpc.api.TblUserService" ref="userService" timeout="100000"/>
+
+    <!-- 角色 -->
+    <bean id="roleService" class="com.papabear.sso.rpc.service.impl.TblRoleServiceImpl"/>
+    <dubbo:service interface="com.papabear.sso.rpc.api.TblRoleService" ref="roleService" timeout="100000"/>
+
+    <!-- 权限 -->
+    <bean id="permissionService" class="com.papabear.sso.rpc.service.impl.TblPermissionServiceImpl"/>
+    <dubbo:service interface="com.papabear.sso.rpc.api.TblPermissionService" ref="permissionService" timeout="100000"/>
+
+    <!-- 角色权限 -->
+    <bean id="rolePermissionService" class="com.papabear.sso.rpc.service.impl.TblRolePermissionServiceImpl"/>
+    <dubbo:service interface="com.papabear.sso.rpc.api.TblRolePermissionService" ref="rolePermissionService" timeout="100000"/>
+
+    <!-- 用户权限 -->
+    <bean id="userPermissionService" class="com.papabear.sso.rpc.service.impl.TblUserPermissionServiceImpl"/>
+    <dubbo:service interface="com.papabear.sso.rpc.api.TblUserPermissionService" ref="userPermissionService" timeout="100000"/>
+
+    <!-- 用户角色 -->
+    <bean id="userRoleService" class="com.papabear.sso.rpc.service.impl.TblUserRoleServiceImpl"/>
+    <dubbo:service interface="com.papabear.sso.rpc.api.TblUserRoleService" ref="userRoleService" timeout="100000"/>
+
+    <!-- 操作日志 -->
+    <bean id="logService" class="com.papabear.sso.rpc.service.impl.TblLogServiceImpl"/>
+    <dubbo:service interface="com.papabear.sso.rpc.api.TblLogService" ref="logService" timeout="100000"/>
+
+    <!-- 接口服务 -->
+    <bean id="apiService" class="com.papabear.sso.rpc.service.impl.TblApiServiceImpl"/>
+    <dubbo:service interface="com.papabear.sso.rpc.api.TblApiService" ref="apiService" timeout="100000"/>
+
+</beans>

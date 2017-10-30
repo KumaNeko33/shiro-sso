@@ -1,0 +1,17 @@
+com\papabear\sso\rpc\api\TblGradeService.class
+com\papabear\sso\rpc\api\TblRolePermissionService.class
+com\papabear\sso\rpc\api\TblLogService.class
+com\papabear\sso\rpc\api\TblPermissionService.class
+com\papabear\sso\rpc\api\TblUserinfoService.class
+com\papabear\sso\rpc\api\TblUserOrganizationService.class
+com\papabear\sso\rpc\api\TblOrganizationService.class
+com\papabear\sso\rpc\api\TblBxnumSpecialTempService.class
+com\papabear\sso\rpc\api\TblApiService.class
+com\papabear\sso\rpc\api\TblSystemService.class
+com\papabear\sso\rpc\api\TblFenxiaoUserInfoService.class
+com\papabear\sso\rpc\api\TblUserPermissionService.class
+com\papabear\sso\rpc\api\TblRoleService.class
+com\papabear\sso\rpc\api\TblUserRoleService.class
+com\papabear\sso\rpc\api\TblBxnumTempService.class
+com\papabear\sso\rpc\api\TblUserService.class
+com\papabear\sso\rpc\api\TblUserDistributingService.class

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd ">
+
+    <dubbo:application name="papabear-sso-server"/>
+
+    <dubbo:registry file="./papabear-sso-server-dubbo.cache" address="zookeeper://127.0.0.1:2181"/>
+
+    <!-- 订阅服务 -->
+    <dubbo:consumer check="false"/>
+
+    <!-- 系统 -->
+    <dubbo:reference id="tblSystemService" interface="com.papabear.sso.rpc.api.TblSystemService"/>
+    <!-- 组织 -->
+    <dubbo:reference id="tblOrganizationService" interface="com.papabear.sso.rpc.api.TblOrganizationService"/>
+    <!-- 用户组织 -->
+    <dubbo:reference id="tblUserOrganizationService" interface="com.papabear.sso.rpc.api.TblUserOrganizationService"/>
+    <!-- 用户 -->
+    <dubbo:reference id="tblUserService" interface="com.papabear.sso.rpc.api.TblUserService"/>
+    <!-- 角色 -->
+    <dubbo:reference id="tblRoleService" interface="com.papabear.sso.rpc.api.TblRoleService"/>
+    <!-- 权限 -->
+    <dubbo:reference id="tblPermissionService" interface="com.papabear.sso.rpc.api.TblPermissionService"/>
+    <!-- 角色权限 -->
+    <dubbo:reference id="tblrolePermissionService" interface="com.papabear.sso.rpc.api.TblRolePermissionService"/>
+    <!-- 用户权限 -->
+    <dubbo:reference id="tblUserPermissionService" interface="com.papabear.sso.rpc.api.TblUserPermissionService"/>
+    <!-- 用户角色 -->
+    <dubbo:reference id="tblUserRoleService" interface="com.papabear.sso.rpc.api.TblUserRoleService"/>
+    <!-- 操作日志 -->
+    <dubbo:reference id="tblLogService" interface="com.papabear.sso.rpc.api.TblLogService"/>
+    <!-- 接口服务 -->
+    <dubbo:reference id="tblApiService" interface="com.papabear.sso.rpc.api.TblApiService"/>
+
+</beans>

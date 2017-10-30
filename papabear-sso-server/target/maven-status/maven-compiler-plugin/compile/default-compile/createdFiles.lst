@@ -1,0 +1,13 @@
+com\papabear\sso\server\controller\manage\UpmsLogController.class
+com\papabear\sso\server\controller\manage\UpmsPermissionController.class
+com\papabear\sso\server\controller\manage\UpmsOrganizationController.class
+com\papabear\sso\server\controller\manage\UpmsSystemController.class
+com\papabear\sso\server\controller\SSOController.class
+com\papabear\sso\server\controller\manage\UpmsRoleController.class
+com\papabear\sso\server\controller\manage\UpmsUserController.class
+com\papabear\sso\server\controller\ManageController.class
+com\papabear\sso\server\controller\manage\UpmsSessionController.class
+com\papabear\sso\server\Initialize.class
+com\papabear\sso\server\ShiroFilter.class
+com\papabear\sso\server\interceptor\UpmsInterceptor.class
+com\papabear\sso\server\CharacterEncodingFilter.class
